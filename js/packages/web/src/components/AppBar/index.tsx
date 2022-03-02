@@ -22,9 +22,9 @@ const getDefaultLinkActions = () => {
     <Link to={`/collections`} key={'collections'}>
       <Button className="app-btn">Collections</Button>
     </Link>,
-    //      <Link to={`/contact`} key={'contact'}>
-    //         <Button className="app-btn">Contact Us</Button>
-    //      </Link>,
+    <Link to={`/contact`} key={'contact'}>
+      <Button className="app-btn">Contact Us</Button>
+    </Link>,
     //     <Link to={`/artworks`} key={'artwork'}>
     //       <Button className="app-btn">{connected ? 'My Items' : 'Artwork'}</Button>
     //     </Link>,
@@ -57,7 +57,7 @@ export const MetaplexMenu = () => {
     return (
       <>
         <Modal
-          title={<img src={'/blockfin-logo.svg'} />}
+          title={<img src={'/blockfin-logo.png'} />}
           visible={isModalVisible}
           footer={null}
           className={'modal-box'}
@@ -116,7 +116,7 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'/blockfin-logo.svg'} />
+      <img src={'/blockfin-logo.png'} />
     </Link>
   );
 };

@@ -1,7 +1,18 @@
-<svg width="160" height="23" xmlns="http://www.w3.org/2000/svg" fill="none">
-
- <g>
-  <title>Layer 1</title>
-  <text style="cursor: move;" transform="matrix(1.29746 0 0 0.969506 -84.0048 2.81741)" stroke="#ffffff" xml:space="preserve" text-anchor="start" font-family="'Alumni Sans'" font-size="24" stroke-width="0" id="svg_13" y="18.7373" x="66.0211" fill="#ffffff">BLOCKFIN</text>
- </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 514 48" style="enable-background:new 0 0 514 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{font-family:'Poppins-Medium';}
+	.st2{font-size:56.7684px;}
+	.st3{letter-spacing:18;}
+</style>
+<polygon class="st0" points="32.64,20.54 11.36,20.54 22.06,2.61 42.25,2.61 "/>
+<polygon class="st0" points="47.18,43.79 37,26.11 47.69,8.18 57.88,25.47 "/>
+<polygon class="st0" points="41.1,45.39 19.7,45.39 9.71,27.46 30.72,27.46 "/>
+<rect x="14.2" y="19.01" transform="matrix(0.8051 -0.5931 0.5931 0.8051 -11.3458 13.5987)" class="st0" width="1.63" height="10.12"/>
+<rect x="43.77" y="3.94" transform="matrix(6.123234e-17 -1 1 6.123234e-17 35.5899 53.5807)" class="st0" width="1.63" height="10.12"/>
+<rect x="41.16" y="34.9" transform="matrix(-0.8226 -0.5686 0.5686 -0.8226 53.7739 96.6957)" class="st0" width="1.63" height="10.12"/>
+<text transform="matrix(1 0 0 1 68.9829 43.96)" class="st0 st1 st2 st3">BLOCKFIN</text>
 </svg>
