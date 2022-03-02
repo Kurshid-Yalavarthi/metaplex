@@ -134,9 +134,7 @@ export const AppBar = () => {
         </div>
         <div className="app-right">
           {connected && <HowToBuyModal buttonClassName="secondary-btn" />}
-          {!connected && (
-            <HowToBuyModal style={{ height: 48 }} buttonClassName="black-btn" />
-          )}
+          {!connected && <HowToBuyModal buttonClassName="black-btn" />}
           {!connected && (
             <ConnectButton style={{ height: 48 }} allowWalletChange />
           )}
