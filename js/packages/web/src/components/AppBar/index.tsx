@@ -14,7 +14,7 @@ import {
 import { ConnectButton } from '@oyster/common';
 import { MobileNavbar } from '../MobileNavbar';
 
-const getDefaultLinkActions = () => {
+const getDefaultLinkActions = (connected: boolean) => {
   return [
     <Link to={`/`} key={'explore'}>
       <Button className="app-btn">Home</Button>
@@ -25,9 +25,9 @@ const getDefaultLinkActions = () => {
     <Link to={`/contact`} key={'contact'}>
       <Button className="app-btn">Contact Us</Button>
     </Link>,
-    //     <Link to={`/artworks`} key={'artwork'}>
-    //       <Button className="app-btn">{connected ? 'My Items' : 'Artwork'}</Button>
-    //     </Link>,
+    <Link to={`/artworks`} key={'artwork'}>
+      <Button className="app-btn">{connected ? 'My Items' : ''}</Button>
+    </Link>,
     //     <Link to={`/artists`} key={'artists'}>
     //       <Button className="app-btn">Creators</Button>
     //     </Link>,
