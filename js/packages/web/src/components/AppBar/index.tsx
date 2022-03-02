@@ -14,20 +14,23 @@ import {
 import { ConnectButton } from '@oyster/common';
 import { MobileNavbar } from '../MobileNavbar';
 
-const getDefaultLinkActions = (connected: boolean) => {
+const getDefaultLinkActions = () => {
   return [
     <Link to={`/`} key={'explore'}>
-      <Button className="app-btn">Explore</Button>
+      <Button className="app-btn">Home</Button>
     </Link>,
     <Link to={`/collections`} key={'collections'}>
       <Button className="app-btn">Collections</Button>
     </Link>,
-    <Link to={`/artworks`} key={'artwork'}>
-      <Button className="app-btn">{connected ? 'My Items' : 'Artwork'}</Button>
-    </Link>,
-    <Link to={`/artists`} key={'artists'}>
-      <Button className="app-btn">Creators</Button>
-    </Link>,
+    //      <Link to={`/contact`} key={'contact'}>
+    //         <Button className="app-btn">Contact Us</Button>
+    //      </Link>,
+    //     <Link to={`/artworks`} key={'artwork'}>
+    //       <Button className="app-btn">{connected ? 'My Items' : 'Artwork'}</Button>
+    //     </Link>,
+    //     <Link to={`/artists`} key={'artists'}>
+    //       <Button className="app-btn">Creators</Button>
+    //     </Link>,
   ];
 };
 
@@ -54,7 +57,7 @@ export const MetaplexMenu = () => {
     return (
       <>
         <Modal
-          title={<img src={'/metaplex-logo.svg'} />}
+          title={<img src={'/blockfin-logo.svg'} />}
           visible={isModalVisible}
           footer={null}
           className={'modal-box'}
@@ -113,7 +116,7 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'/metaplex-logo.svg'} />
+      <img src={'/blockfin-logo.svg'} />
     </Link>
   );
 };
@@ -130,8 +133,9 @@ export const AppBar = () => {
           <MetaplexMenu />
         </div>
         <div className="app-right">
+          {connected && <HowToBuyModal buttonClassName="secondary-btn" />}
           {!connected && (
-            <HowToBuyModal buttonClassName="modal-button-default" />
+            <HowToBuyModal style={{ height: 48 }} buttonClassName="black-btn" />
           )}
           {!connected && (
             <ConnectButton style={{ height: 48 }} allowWalletChange />

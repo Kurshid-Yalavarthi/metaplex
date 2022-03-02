@@ -18,6 +18,7 @@ import PackView from './views/pack';
 import { PackCreateView } from './views/packCreate';
 import { BillingView } from './views/auction/billing';
 import { CollectionsView } from './views/collections';
+import { ContactUsView } from './views/contact';
 import { CollectionDetailView } from './views/collections/collectionDetail';
 
 export function Routes() {
@@ -78,6 +79,7 @@ export function Routes() {
             />
             <Route path="/about" component={() => <StaticPageView />} />
             <Route path="/collections" component={() => <CollectionsView />} />
+            <Route path="/contact" component={() => <ContactUsView />} />
             <Route
               path="/collection/:id"
               component={() => <CollectionDetailView />}
